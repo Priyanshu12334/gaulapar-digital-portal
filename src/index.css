@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* 16px mobile base */
+  }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; /* 18px desktop base */
+    }
+  }
+  body {
+    @apply bg-gov-cream-bg text-slate-800 font-sans antialiased leading-relaxed tracking-normal;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-slate-900;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Cards */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-sm rounded-2xl transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply shadow-lg border-white/60 -translate-y-1 bg-white/80;
+  }
+
+  .glass-card-dark {
+    @apply bg-gov-blue-dark/80 backdrop-blur-md border border-white/10 shadow-lg rounded-2xl transition-all duration-300;
+  }
+  
+  .glass-card-dark:hover {
+    @apply border-white/20 shadow-xl -translate-y-1 bg-gov-blue-dark/90;
+  }
+
+  /* Interactive Buttons */
+  .btn-saffron {
+    @apply px-6 py-3 bg-gradient-to-r from-gov-saffron-500 to-gov-saffron-600 text-white rounded-xl font-medium shadow-md shadow-gov-saffron-500/20 hover:shadow-lg hover:shadow-gov-saffron-500/30 hover:from-gov-saffron-600 hover:to-gov-saffron-700 active:scale-95 transition-all duration-150 ease-in-out;
+  }
+
+  .btn-green {
+    @apply px-6 py-3 bg-gradient-to-r from-gov-green-600 to-gov-green-700 text-white rounded-xl font-medium shadow-md shadow-gov-green-600/20 hover:shadow-lg hover:shadow-gov-green-600/30 hover:from-gov-green-700 hover:to-gov-green-800 active:scale-95 transition-all duration-150 ease-in-out;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 bg-transparent border-2 border-slate-300 hover:border-slate-800 text-slate-700 hover:text-slate-900 rounded-xl font-medium active:scale-95 transition-all duration-150 ease-in-out;
+  }
+
+  .btn-outline-white {
+    @apply px-6 py-3 bg-transparent border-2 border-white/40 hover:border-white text-white rounded-xl font-medium active:scale-95 transition-all duration-150 ease-in-out;
+  }
+
+  /* Animated Badges */
+  .badge-live {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-700 border border-red-200 animate-pulse-subtle;
+  }
+
+  .badge-green {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-gov-green-100 text-gov-green-800 border border-gov-green-200;
+  }
+
+  .badge-saffron {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-gov-saffron-100 text-gov-saffron-800 border border-gov-saffron-100;
+  }
+
+  .badge-blue {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold rounded-full bg-gov-blue-100 text-gov-blue-900 border border-gov-blue-100;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gov-cream-bg;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
+
+/* Page gradient accents */
+.bg-mesh {
+  background-color: #fcfdfa;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(220, 252, 231, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 237, 213, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(224, 239, 255, 0.3) 0px, transparent 50%);
+}
+
+/* Timeline Custom Styles */
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(to bottom, #dcfce7 0%, #22c55e 50%, #16a34a 100%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline-line::before {
+    left: 20px;
+    transform: none;
+  }
+}
