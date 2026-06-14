@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌱 सूर्यपुरा ग्राम विकास पोर्टल (Suryapura Rural Development Portal)
 
 A premium, production-quality, mobile-first React application showcasing village transformation through digital empowerment, education, agriculture, road infrastructure, digital identity, and panchayat services.
@@ -137,4 +136,3 @@ If you prefer deploying directly from your terminal:
 =======
 # suryapura-rural-development-portal
 A modern and responsive rural development portal built with React, Vite, Tailwind CSS, Recharts, and React Icons. Showcasing education, agriculture, panchayat services, digital identity, and village development initiatives through a government-tech inspired user interface.
->>>>>>> a64afcdf2cd4bedd8ee247ff6e91e68e7d401e4f
