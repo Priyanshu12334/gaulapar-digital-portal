@@ -12,6 +12,7 @@ const Education = () => {
       type: 'CBSE Affiliated • Co-Educational (Up to Class 12)',
       established: 'Est. 1996',
       location: 'Kunwarpur, P.O. Kunwarpur (Gaulapar), Haldwani, Nainital – 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.1917393%2C79.5656772',
       phone: null,
       email: null,
       website: 'https://heerakunwarpublicschool.com',
@@ -24,6 +25,7 @@ const Education = () => {
       type: 'CBSE Affiliated • Co-Educational (Pre-Nursery to Class 12)',
       established: 'Est. 2007',
       location: 'Daulatpur, Gaulapar, Haldwani, Nainital – 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.1644303%2C79.5920936',
       phone: '+91-9927780800, +91-7247271212',
       email: 'vendypublicschool2007@gmail.com',
       website: 'https://vendypublicschool.com',
@@ -36,6 +38,7 @@ const Education = () => {
       type: 'CBSE Affiliated (No. 3530563) • Co-Educational (Nursery to Class 12)',
       established: 'Est. 2004',
       location: 'Village Devla Malla, P.O. Kunwarpur (Gaulapar), Haldwani – 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.2193611%2C79.5627497',
       phone: null,
       email: null,
       website: 'https://www.parwatpublicschool.com',
@@ -48,6 +51,7 @@ const Education = () => {
       type: 'Private Co-Educational School (Pre-Primary & Upper Levels)',
       established: 'Gaulapar',
       location: 'Tanakpur Road, Madanpur, Kishanpur, Gaulapar, Haldwani – 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.1465948%2C79.5822771',
       phone: '+91-6396530919, +91-7351236789',
       email: 'elitepublicschoolgaulapar@gmail.com',
       website: 'https://elitepublicschoolgaulapar.com',
@@ -59,23 +63,37 @@ const Education = () => {
       category: 'government',
       type: 'Government Co-Educational School (Class 6 to 12)',
       established: 'Dept. of Education, Uttarakhand',
-      location: 'Daulatpur / Sundarpur Rekwal Area, Haldwani Block, Nainital',
+      location: '5H7V+6HC, Bhagwatpur Rekuni, Uttarakhand 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.1630576%2C79.5938844',
       phone: null,
       email: null,
       website: null,
-      notes: 'State government secondary and higher secondary school serving Daulatpur and neighbouring Gaulapar localities.',
+      notes: 'Mapped serving the Daulatpur area of Gaulapar.',
     },
     {
-      id: 'gdc-gaulapar',
-      name: 'Government Degree College, Haldwani City (Gaulapar)',
+      id: 'government-primary-bagjala',
+      name: 'Government Primary School, Bagjala',
       category: 'government',
-      type: 'Government Degree College • Kumaun University',
-      established: 'Est. 2021',
-      location: 'Gaulapar, Haldwani, District Nainital, Uttarakhand',
+      type: 'Government Primary School',
+      established: 'Government School',
+      location: '6H64+6VQ, Gola Range, Uttarakhand 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.2105751%2C79.5572289',
       phone: null,
       email: null,
-      website: 'https://gdchaldwani.ac.in',
-      notes: 'Government higher-education institution in Gaulapar offering undergraduate programmes.',
+      website: null,
+      notes: 'Mapped primary school serving the Bagjala area of Gaulapar.',
+    },
+    {
+      id: 'psms-inter-college',
+      name: 'P.S.M.S. Inter College, Kunwarpur',
+      category: 'government',
+      type: 'Government Inter College / राजकीय इंटर कॉलेज',
+      location: 'Kunwarpur, Gaulapar, Haldwani, Uttarakhand 263139',
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=P.S.M.S.+Inter+College+Kunwarpur+Gaulapar+Haldwani',
+      phone: null,
+      email: null,
+      website: null,
+      notes: 'Mapped inter college serving the Kunwarpur area of Gaulapar.',
     },
   ];
 
@@ -91,14 +109,19 @@ const Education = () => {
       : institutions.filter((item) => item.category === filter);
 
   return (
-    <section id="education" className="py-16 md:py-24 bg-white border-y border-slate-100 scroll-mt-20">
+    <section id="education" className="py-16 md:py-20 bg-gov-cream-bg border-y border-slate-100 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <span className="badge-green mb-3">शिक्षा निर्देशिका / Education Directory</span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-            गौलापार क्षेत्र के प्रमुख शिक्षण संस्थान
+          <h2 className="text-center font-extrabold text-slate-900 leading-tight md:whitespace-nowrap">
+            <span className="block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:inline-block md:text-2xl xl:text-3xl">
+              गौलापार क्षेत्र के प्रमुख शिक्षण संस्थान
+            </span>
+            <span className="mt-1 block text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:mt-0 md:ml-2 md:inline-block md:text-sm xl:text-base md:whitespace-nowrap">
+              / Key Educational Institutions in Gaulapar
+            </span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium">
             Verified schools and higher education institutions serving Gaulapar and neighbouring Haldwani block villages.
@@ -127,16 +150,18 @@ const Education = () => {
           {visibleInstitutions.map((inst) => (
             <div
               key={inst.id}
-              className="bg-gov-cream-bg rounded-3xl border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-md transition-all"
+              className="bg-white rounded-3xl border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-md transition-all"
             >
               <div>
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <div className="p-2.5 rounded-xl bg-gov-green-100 text-gov-green-800">
                     <FiBookOpen className="w-5 h-5" />
                   </div>
-                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600">
-                    {inst.established}
-                  </span>
+                  {inst.established && (
+                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-white border border-slate-200 text-slate-600">
+                      {inst.established}
+                    </span>
+                  )}
                 </div>
 
                 <h3 className="text-lg font-bold text-slate-900 leading-snug">
@@ -145,16 +170,39 @@ const Education = () => {
                 <p className="text-xs font-semibold text-gov-green-800 mt-1">
                   {inst.type}
                 </p>
-                <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                  {inst.notes}
-                </p>
+                {inst.notes && (
+                  <p className="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
+                    {inst.notes}
+                  </p>
+                )}
               </div>
 
               <div className="mt-5 pt-4 border-t border-slate-200/70 space-y-2 text-xs text-slate-600">
                 <div className="flex items-start gap-2">
                   <FiMapPin className="w-4 h-4 text-gov-saffron-600 flex-shrink-0 mt-0.5" />
-                  <span>{inst.location}</span>
+                  {inst.mapUrl ? (
+                    <a
+                      href={inst.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-slate-300 underline-offset-2 hover:text-gov-green-800"
+                    >
+                      {inst.location}
+                    </a>
+                  ) : (
+                    <span>{inst.location}</span>
+                  )}
                 </div>
+                {inst.mapUrl && (
+                  <a
+                    href={inst.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex font-bold text-gov-green-800 hover:text-gov-saffron-600 transition-colors"
+                  >
+                    View on Map →
+                  </a>
+                )}
                 {inst.phone && (
                   <div className="flex items-center gap-2">
                     <FiPhone className="w-3.5 h-3.5 text-gov-green-700 flex-shrink-0" />

@@ -1,12 +1,17 @@
 import { FiMapPin } from 'react-icons/fi';
 
 const AboutGaulapar = () => (
-  <section id="about" className="py-16 md:py-6 bg-white border-y border-slate-100 scroll-mt-20">
+  <section id="about" className="py-16 md:py-6 bg-gov-cream-bg border-y border-slate-100 scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <span className="badge-green mb-3">गौलापार परिचय / About Gaulapar</span>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-          एक क्षेत्र, अनेक बस्तियां
+        <h2 className="text-center font-extrabold text-slate-900 leading-tight md:whitespace-nowrap">
+          <span className="block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:inline-block md:text-2xl xl:text-3xl">
+            एक क्षेत्र, अनेक बस्तियां
+          </span>
+          <span className="mt-1 block text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:mt-0 md:ml-2 md:inline-block md:text-sm xl:text-base md:whitespace-nowrap">
+            / One Region, Many Settlements
+          </span>
         </h2>
         <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium">
           Gaulapar is commonly used for the settled area east of the Gaula River around Haldwani. It includes a mix of villages, hamlets, and road-side localities rather than one single revenue-village boundary.
@@ -14,7 +19,7 @@ const AboutGaulapar = () => (
       </div>
 
       <div className="mx-auto max-w-4xl">
-        <div className="rounded-3xl border border-slate-200/80 bg-gov-cream-bg p-6 text-center sm:p-8">
+        <div className="rounded-3xl border border-slate-200/80 bg-white p-6 text-center sm:p-8">
           <div className="flex flex-col items-center">
             <div className="rounded-xl bg-gov-green-100 p-2.5 text-gov-green-800">
               <FiMapPin className="w-5 h-5" />

@@ -41,7 +41,7 @@ export default {
             50: '#fafaf9',
             100: '#f5f5f4',
             200: '#e7e5e4',
-            bg: '#fcfdfa', // warm light bg
+            bg: '#f7f8f5', // soft off-white page background
           },
           gold: {
             500: '#d4af37',

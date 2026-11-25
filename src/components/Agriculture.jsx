@@ -72,12 +72,17 @@ const crops = [
 ];
 
 const Agriculture = () => (
-  <section id="agriculture" className="py-16 md:py-24 bg-gov-cream-bg scroll-mt-20">
+  <section id="agriculture" className="py-16 md:py-20 bg-gov-cream-bg scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <span className="badge-green mb-3">खेती-बाड़ी / Farming</span>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-          गौलापार क्षेत्र की फसलें और मौसम
+        <h2 className="text-center font-extrabold text-slate-900 leading-tight md:whitespace-nowrap">
+          <span className="block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:inline-block md:text-2xl xl:text-3xl">
+            गौलापार क्षेत्र की फसलें और मौसम
+          </span>
+          <span className="mt-1 block text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:mt-0 md:ml-2 md:inline-block md:text-sm xl:text-base md:whitespace-nowrap">
+            / Crops &amp; Seasons in Gaulapar
+          </span>
         </h2>
         <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium">
           Seasons are general guides; crops and sowing dates vary by farm and locality.

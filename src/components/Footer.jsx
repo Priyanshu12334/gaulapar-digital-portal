@@ -64,7 +64,6 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-xs font-semibold">
               <li><a href="#agriculture" className="hover:text-gov-green-500 transition-colors">Farming</a></li>
-              <li><a href="#gallery" className="hover:text-gov-green-500 transition-colors">Gallery</a></li>
             </ul>
           </div>
 
@@ -79,8 +78,8 @@ const Footer = () => {
                 <span>Gaulapar region, Haldwani, District Nainital, Uttarakhand, India.</span>
               </li>
               <li className="flex items-start gap-2 text-slate-300">
-                <span className="text-gov-gold-500 font-bold flex-shrink-0">Contact:</span>
-                <span>Priyanshu Suyal</span>
+                
+                <span>Built by Priyanshu Suyal</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <FiPhone className="text-gov-green-500 w-4 h-4 flex-shrink-0" />
@@ -98,53 +97,6 @@ const Footer = () => {
           </div>
 
         </div>
-
-        <details className="border-t border-slate-800 pt-4 text-xs text-slate-400">
-          <summary className="w-fit cursor-pointer font-semibold text-slate-300 hover:text-white">
-            Image credits
-          </summary>
-          <p className="mt-3 text-slate-400">
-            Crop photos are examples from other locations, not photographs of Gaulapar farms.
-          </p>
-          <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-            <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Tomato_plants,_2021_-_geograph.org.uk_-_6748379.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Tomato plants — Jonathan Billinger, CC BY-SA 2.0
-              </a>
-            </li>
-            <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Sunset-over-the-wheat-field-featured.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Wheat field — Dreamy Pixel, CC BY 4.0
-              </a>
-            </li>
-            <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Water_reflection_of_a_boy_feeding_hay_to_a_cow_in_a_paddy_field_at_golden_hour_in_Laos.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Paddy field — Basile Morin, CC BY-SA 4.0
-              </a>
-            </li>
-            <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Brassica_rapa_-_April_2023_-_Sarah_Stierch_01.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Mustard flowers — Missvain, CC BY 4.0
-              </a>
-            </li>
-            <li>
-              <a href="https://commons.wikimedia.org/wiki/File:Sugarcane_Field_Srirangapatna_Karnataka_Jul22_R16_06192.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Sugarcane field — Timothy A. Gonsalves, CC BY-SA 4.0
-              </a>
-            </li>
-            <li className="sm:col-span-2">
-              <a href="https://commons.wikimedia.org/wiki/File:Gaula_Bridge,_Haldwani_Bypass.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                Gaula River, bridge, and stadium photos — ArmouredCyborg, CC BY-SA 4.0
-              </a>
-            </li>
-            <li className="sm:col-span-2">
-              Potato and seasonal vegetable images from Unsplash, used under the{' '}
-              <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white">
-                Unsplash License
-              </a>.
-            </li>
-          </ul>
-        </details>
 
         {/* Social & Scroll Top */}
         <div className="my-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6 pt-6">

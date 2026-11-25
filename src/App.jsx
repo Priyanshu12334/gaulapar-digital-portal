@@ -5,7 +5,6 @@ import PlacesToExplore from './components/PlacesToExplore';
 import Development from './components/Development';
 import Education from './components/Education';
 import Agriculture from './components/Agriculture';
-import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Development />
         <Education />
         <Agriculture />
-        <Gallery />
         </main>
         <Footer />
       </div>

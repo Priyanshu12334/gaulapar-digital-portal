@@ -1,18 +1,25 @@
 import { FiExternalLink, FiMapPin } from 'react-icons/fi';
+import gaulaRiverImage from '../assets/gaula-river-card.jpg';
+import stadiumCardImage from '../assets/ig-stadium-card.jpg';
 
 const localities = [
   { name: 'Kunwarpur', group: 'Gaulapar side · Haldwani', status: 'Mapped village', query: 'Kunwarpur, Haldwani, Nainital, Uttarakhand' },
   { name: 'Kishanpur', group: 'Gaulapar area', status: 'Community locality name', query: 'Kishanpur, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Kishan Nagari', group: 'Gaulapar area', status: 'Community locality name', query: 'Kishan Nagari, Gaulapar, Haldwani, Uttarakhand' },
   { name: 'East Khera', group: 'Gaulapar area', status: 'Community locality name', query: 'East Khera, Haldwani, Uttarakhand' },
   { name: 'West Khera', group: 'Gaulapar area', status: 'Community locality name', query: 'West Khera, Haldwani, Uttarakhand' },
   { name: 'Daulatpur', group: 'Southern nearby belt · Lalkuan', status: 'Mapped service point nearby', query: 'Daulatpur, Haldwani, Nainital, Uttarakhand' },
   { name: 'Lachhampur', group: 'Gaulapar area', status: 'Community locality name', query: 'Lachhampur, Haldwani, Uttarakhand' },
   { name: 'Jitpur', group: 'Gaulapar area', status: 'Community locality name', query: 'Jitpur, Haldwani, Uttarakhand' },
-  { name: 'Jwala Pokhri', group: 'Gaulapar area', status: 'Community locality name', query: 'Jwala Pokhri, Haldwani, Uttarakhand' },
   { name: 'Lakhanpur', group: 'Southern nearby belt · Lalkuan', status: 'Mapped village', query: 'Lakhanpur, Lalkuan, Nainital, Uttarakhand' },
   { name: 'Chorgaliya', group: 'Southern nearby belt · Lalkuan', status: 'Mapped village', query: 'Chorgalia, Lalkuan, Nainital, Uttarakhand' },
-  { name: 'Bamori Malli', group: 'Gaulapar side · Haldwani', status: 'Mapped stadium address', query: 'Bamori Malli, Haldwani, Nainital, Uttarakhand' },
   { name: 'Devla Malla', group: 'Gaulapar side · Haldwani', status: 'School address locality', query: 'Devla Malla, Haldwani, Nainital, Uttarakhand' },
+  { name: 'Devla Talla', group: 'Gaulapar area', status: 'Community locality name', query: 'Devla Talla, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Nawar Khera', group: 'Gaulapar area', status: 'Community locality name', query: 'Nawar Khera, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Jagatpur', group: 'Gaulapar area', status: 'Community locality name', query: 'Jagatpur, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Rambagh', group: 'Gaulapar area', status: 'Community locality name', query: 'Rambagh, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Dani Bangar', group: 'Gaulapar area', status: 'Community locality name', query: 'Dani Bangar, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Sultan Nagari', group: 'Gaulapar area', status: 'Community locality name', query: 'Sultan Nagari, Gaulapar, Haldwani, Uttarakhand' },
 ];
 
 const landmarks = [
@@ -30,8 +37,8 @@ const landmarks = [
     hindi: 'गौला नदी',
     category: 'Natural landmark',
     description: 'The river corridor is a defining geographic feature between Haldwani and Gaulapar. Follow local safety guidance near the riverbed.',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Gaula_river_from_Haldwani_Bypass.jpg/960px-Gaula_river_from_Haldwani_Bypass.jpg',
-    imageAlt: 'Gaula River viewed from Haldwani bypass',
+    image: gaulaRiverImage,
+    imageAlt: 'Gaula River with a rocky riverbed and green pools',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.210639%2C79.539093',
   },
   {
@@ -39,7 +46,7 @@ const landmarks = [
     hindi: 'इंदिरा गांधी अंतरराष्ट्रीय खेल स्टेडियम',
     category: 'Sports & public venue',
     description: 'A major public sports complex located at Kunwarpur on the Haldwani bypass, in the Gaulapar area.',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Indira_Gandhi_stadium_Haldwani_01.jpg/960px-Indira_Gandhi_stadium_Haldwani_01.jpg',
+    image: stadiumCardImage,
     imageAlt: 'Indira Gandhi stadium in Haldwani',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=29.2194894%2C79.5430168',
   },
@@ -77,12 +84,17 @@ const mapSearch = (query) =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 
 const PlacesToExplore = () => (
-  <section id="places" className="py-16 md:py-24 bg-gov-cream-bg scroll-mt-20">
+  <section id="places" className="py-16 md:py-20 bg-gov-cream-bg scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <span className="badge-saffron mb-3">दर्शनीय एवं प्रमुख स्थल / Places to Explore</span>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-tight">
-          गौलापार और आसपास की जगहें
+        <h2 className="text-center font-extrabold text-slate-900 leading-tight md:whitespace-nowrap">
+          <span className="block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:inline-block md:text-2xl xl:text-3xl">
+            गौलापार और आसपास की जगहें
+          </span>
+          <span className="mt-1 block text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:mt-0 md:ml-2 md:inline-block md:text-sm xl:text-base md:whitespace-nowrap">
+            / Places in and Around Gaulapar
+          </span>
         </h2>
         <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium">
           Browse mapped settlements, the Gaula river crossing, sports facilities, temples, markets, and schools across the wider region.
@@ -113,13 +125,18 @@ const PlacesToExplore = () => (
 
       <div className="mt-12 rounded-3xl border border-slate-200/80 bg-white p-6 sm:p-8 shadow-sm">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
+          <div className="w-full text-center sm:w-auto sm:text-left">
             <span className="badge-green mb-2">स्थानीय क्षेत्र / Localities</span>
-            <h3 className="text-xl font-bold text-slate-900">गौलापार क्षेत्र के गांव और बसावटें</h3>
+            <h3 className="text-center font-extrabold text-slate-900 leading-tight whitespace-nowrap sm:text-left">
+              <span className="inline-block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:text-2xl xl:text-3xl">
+                गौलापार क्षेत्र के गांव
+              </span>
+              <span className="ml-1 inline-block whitespace-nowrap text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:ml-2 md:text-sm xl:text-base">
+                / Villages of Gaulapar
+              </span>
+            </h3>
           </div>
-          <p className="max-w-xl text-xs leading-relaxed text-slate-500">
-            OpenStreetMap resolves some settlements but not every community locality name. Search results are not official boundaries; verify a precise pin locally. Chorgaliya and Lakhanpur are listed separately as nearby places in Lalkuan.
-          </p>
+
         </div>
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {localities.map((locality) => (
@@ -142,7 +159,7 @@ const PlacesToExplore = () => (
             </a>
           ))}
         </div>
-        <p className="mt-4 text-[11px] text-slate-500">Map data: © OpenStreetMap contributors, ODbL 1.0.</p>
+
       </div>
 
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

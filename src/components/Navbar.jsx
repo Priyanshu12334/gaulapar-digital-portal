@@ -5,7 +5,6 @@ import {
   FiChevronRight,
   FiCompass,
   FiHome,
-  FiImage,
   FiInfo,
   FiLayers,
   FiMapPin,
@@ -22,7 +21,6 @@ const navLinks = [
   { name: 'Development', href: '#development', icon: FiLayers },
   { name: 'Education', href: '#education', icon: FiBookOpen },
   { name: 'Farming', href: '#agriculture', icon: GiWheat },
-  { name: 'Gallery', href: '#gallery', icon: FiImage },
   { name: 'Contact', href: '#contact', icon: FiPhone },
 ];
 
