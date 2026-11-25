@@ -1,12 +1,10 @@
-import React from 'react';
-import { 
-  FiMail, 
-  FiPhone, 
-  FiMapPin, 
+import {
+  FiMail,
+  FiPhone,
+  FiMapPin,
   FiLinkedin,
   FiInstagram,
   FiArrowUp,
-  FiGlobe
 } from 'react-icons/fi';
 
 const Footer = () => {
@@ -15,8 +13,8 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-slate-900 text-slate-300 relative">
-      {/* Saffron and Green top borders */}
+    <footer id="contact" className="bg-slate-900 text-slate-300 relative scroll-mt-20">
+      {/* Saffron and Green top border */}
       <div className="flex h-1.5 w-full">
         <div className="w-1/2 bg-gov-saffron-500" />
         <div className="w-1/2 bg-gov-green-600" />
@@ -24,86 +22,75 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          
-          {/* About Portal */}
+
+          {/* Portal Identity */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="text-3xl">🌱</span>
-              <span className="text-xl font-black text-white tracking-tight">Suryapura</span>
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-xl bg-gov-green-700 text-white flex items-center justify-center font-extrabold text-base">
+                गौ
+              </div>
+              <div>
+                <span className="text-lg font-extrabold text-white tracking-tight block leading-none">
+                  Gaulapar • गौलापार
+                </span>
+                <span className="text-[11px] font-semibold text-gov-saffron-500">
+                  Digital Village Portal
+                </span>
+              </div>
             </div>
-            <p className="text-xs font-semibold text-slate-400 leading-relaxed">
-              सूर्यपुरा ग्राम विकास पोर्टल का उद्देश्य ग्राम पंचायत में शिक्षा, कृषि, स्वास्थ्य और बुनियादी ढांचे को डिजिटल सशक्तिकरण के माध्यम से समृद्ध और पारदर्शी बनाना है।
-            </p>
-            <p className="text-xs font-semibold text-slate-500">
-              Pioneering rural digitalization and self-reliance under the Smart Village Campaign.
+            <p className="text-xs font-medium text-slate-400 leading-relaxed">
+              गौलापार डिजिटल ग्राम पोर्टल — हल्द्वानी, जिला नैनीताल, उत्तराखंड के गौलापार क्षेत्र की संस्कृति, प्रमुख स्थलों, शिक्षा और खेती-बाड़ी की जानकारी का साझा मंच।
             </p>
           </div>
 
-          {/* Development Programs */}
+          {/* Explore Links */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider border-l-2 border-gov-green-600 pl-3">
-              विकास कार्यक्रम (Programs)
+              प्रमुख अनुभाग (Explore)
             </h4>
-            <ul className="space-y-2.5 text-xs font-semibold">
-              <li>
-                <a href="#development" className="hover:text-gov-saffron-500 transition-colors">🌾 उन्नत कृषि सहायता (Agriculture)</a>
-              </li>
-              <li>
-                <a href="#education" className="hover:text-gov-saffron-500 transition-colors">🎓 डिजिटल स्कूलिंग (Smart Education)</a>
-              </li>
-              <li>
-                <a href="#development" className="hover:text-gov-saffron-500 transition-colors">🛣️ पक्की सड़क कनेक्टिविटी (Roads)</a>
-              </li>
-              <li>
-                <a href="#development" className="hover:text-gov-saffron-500 transition-colors">💧 स्वच्छ जल एवं स्वच्छता (Water & Sanitation)</a>
-              </li>
+            <ul className="space-y-2 text-xs font-semibold">
+              <li><a href="#home" className="hover:text-gov-saffron-500 transition-colors">Home</a></li>
+              <li><a href="#about" className="hover:text-gov-saffron-500 transition-colors">About Gaulapar</a></li>
+              <li><a href="#places" className="hover:text-gov-saffron-500 transition-colors">Places to Explore</a></li>
+              <li><a href="#development" className="hover:text-gov-saffron-500 transition-colors">Development</a></li>
+              <li><a href="#education" className="hover:text-gov-saffron-500 transition-colors">Education</a></li>
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Community Links */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider border-l-2 border-gov-saffron-500 pl-3">
-              त्वरित लिंक (Quick Links)
+              समुदाय व सेवाएं (Community)
             </h4>
-            <ul className="space-y-2.5 text-xs font-semibold">
-              <li>
-                <a href="#home" className="hover:text-gov-green-500 transition-colors">मुख्य पृष्ठ (Home Page)</a>
-              </li>
-              <li>
-                <a href="#statistics" className="hover:text-gov-green-500 transition-colors">प्रभाव और आंकड़े (Impact Statistics)</a>
-              </li>
-              <li>
-                <a href="#panchayat" className="hover:text-gov-green-500 transition-colors">ग्राम पंचायत सूचनाएं (Panchayat Board)</a>
-              </li>
-              <li>
-                <span className="cursor-pointer hover:text-gov-green-500 transition-colors">नागरिक अधिकार घोषणा पत्र</span>
-              </li>
+            <ul className="space-y-2 text-xs font-semibold">
+              <li><a href="#agriculture" className="hover:text-gov-green-500 transition-colors">Farming</a></li>
+              <li><a href="#gallery" className="hover:text-gov-green-500 transition-colors">Gallery</a></li>
             </ul>
           </div>
 
           {/* Contact Information */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider border-l-2 border-gov-gold-600 pl-3">
-              संपर्क विवरण (Contact Us)
+              संपर्क विवरण (Contact)
             </h4>
-            <ul className="space-y-3.5 text-xs font-semibold text-slate-400">
-              <li className="flex items-start gap-3">
+            <ul className="space-y-3 text-xs font-medium text-slate-400">
+              <li className="flex items-start gap-2.5">
                 <FiMapPin className="text-gov-saffron-500 w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>पंचायत भवन, ग्राम-सूर्यपुरा, वार्ड नं.-04, पिन: 802101, भारत।</span>
+                <span>Gaulapar region, Haldwani, District Nainital, Uttarakhand, India.</span>
               </li>
-              <li className="flex items-start gap-3 text-slate-300">
-                <span className="text-gov-gold-500 font-bold flex-shrink-0">संपर्क व्यक्ति / Contact:</span>
+              <li className="flex items-start gap-2 text-slate-300">
+                <span className="text-gov-gold-500 font-bold flex-shrink-0">Contact:</span>
                 <span>Priyanshu Suyal</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2.5">
                 <FiPhone className="text-gov-green-500 w-4 h-4 flex-shrink-0" />
-                <a href="tel:+918006084643" className="hover:text-gov-saffron-500 transition-colors" aria-label="Call Priyanshu Suyal at +918006084643">
+                <a href="tel:+918006084643" className="hover:text-gov-saffron-500 transition-colors">
                   +91 8006084643
                 </a>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-2.5">
                 <FiMail className="text-gov-gold-500 w-4 h-4 flex-shrink-0" />
-                <a href="mailto:suyalpriyanshu2@gmail.com" className="hover:text-gov-saffron-500 transition-colors" aria-label="Email Priyanshu Suyal at suyalpriyanshu2@gmail.com">
+                <a href="mailto:suyalpriyanshu2@gmail.com" className="hover:text-gov-saffron-500 transition-colors break-all">
                   suyalpriyanshu2@gmail.com
                 </a>
               </li>
@@ -112,64 +99,97 @@ const Footer = () => {
 
         </div>
 
-        {/* Middle divider */}
+        <details className="border-t border-slate-800 pt-4 text-xs text-slate-400">
+          <summary className="w-fit cursor-pointer font-semibold text-slate-300 hover:text-white">
+            Image credits
+          </summary>
+          <p className="mt-3 text-slate-400">
+            Crop photos are examples from other locations, not photographs of Gaulapar farms.
+          </p>
+          <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Tomato_plants,_2021_-_geograph.org.uk_-_6748379.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Tomato plants — Jonathan Billinger, CC BY-SA 2.0
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Sunset-over-the-wheat-field-featured.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Wheat field — Dreamy Pixel, CC BY 4.0
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Water_reflection_of_a_boy_feeding_hay_to_a_cow_in_a_paddy_field_at_golden_hour_in_Laos.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Paddy field — Basile Morin, CC BY-SA 4.0
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Brassica_rapa_-_April_2023_-_Sarah_Stierch_01.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Mustard flowers — Missvain, CC BY 4.0
+              </a>
+            </li>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:Sugarcane_Field_Srirangapatna_Karnataka_Jul22_R16_06192.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Sugarcane field — Timothy A. Gonsalves, CC BY-SA 4.0
+              </a>
+            </li>
+            <li className="sm:col-span-2">
+              <a href="https://commons.wikimedia.org/wiki/File:Gaula_Bridge,_Haldwani_Bypass.jpg" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                Gaula River, bridge, and stadium photos — ArmouredCyborg, CC BY-SA 4.0
+              </a>
+            </li>
+            <li className="sm:col-span-2">
+              Potato and seasonal vegetable images from Unsplash, used under the{' '}
+              <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white">
+                Unsplash License
+              </a>.
+            </li>
+          </ul>
+        </details>
+
+        {/* Social & Scroll Top */}
         <div className="my-10 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6 pt-6">
-          
-          {/* Social Icons */}
-          <div className="flex gap-4">
-            <a 
-              href="https://www.linkedin.com/in/priyanshu-suyal-5732b224a" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="p-2.5 bg-slate-800 hover:bg-gov-blue-700 hover:text-white rounded-xl transition-all hover:-translate-y-1 shadow animate-pulse-subtle" 
-              title="LinkedIn"
+          <div className="flex gap-3">
+            <a
+              href="https://www.linkedin.com/in/priyanshu-suyal-5732b224a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 bg-slate-800 hover:bg-gov-blue-700 hover:text-white rounded-xl transition-all"
               aria-label="LinkedIn Profile"
             >
-              <FiLinkedin className="w-4.5 h-4.5" />
+              <FiLinkedin className="w-4 h-4" />
             </a>
-            <a 
-              href="https://www.instagram.com/priyanshu_suyal_" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="p-2.5 bg-slate-800 hover:bg-gov-saffron-600 hover:text-white rounded-xl transition-all hover:-translate-y-1 shadow" 
-              title="Instagram"
+            <a
+              href="https://www.instagram.com/priyanshu_suyal_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 bg-slate-800 hover:bg-gov-saffron-600 hover:text-white rounded-xl transition-all"
               aria-label="Instagram Profile"
             >
-              <FiInstagram className="w-4.5 h-4.5" />
+              <FiInstagram className="w-4 h-4" />
             </a>
-            <a 
-              href="mailto:suyalpriyanshu2@gmail.com" 
-              className="p-2.5 bg-slate-800 hover:bg-gov-green-700 hover:text-white rounded-xl transition-all hover:-translate-y-1 shadow" 
-              title="Email Developer"
-              aria-label="Email Developer"
+            <a
+              href="mailto:suyalpriyanshu2@gmail.com"
+              className="p-2.5 bg-slate-800 hover:bg-gov-green-700 hover:text-white rounded-xl transition-all"
+              aria-label="Email Portal Maintainer"
             >
-              <FiMail className="w-4.5 h-4.5" />
+              <FiMail className="w-4 h-4" />
             </a>
           </div>
 
-          {/* Go To Top button */}
           <button
             onClick={scrollToTop}
-            className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl border border-slate-700 hover:border-slate-600 flex items-center gap-2 shadow active:scale-95 transition-all"
+            className="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl border border-slate-700 flex items-center gap-2 transition-all"
           >
             <span>Scroll To Top</span>
             <FiArrowUp />
           </button>
-
         </div>
 
-        {/* Bottom copyright details */}
-        <div className="border-t border-slate-800/60 pt-6 text-center text-[10px] font-bold text-slate-500 space-y-2">
-          <p>© 2026 सूर्यपुरा ग्राम विकास पोर्टल</p>
-          <p className="flex items-center justify-center gap-2 flex-wrap">
-            <span className="flex items-center gap-0.5"><FiGlobe /> NATIONAL INFORMATICS CENTRE</span>
-            <span>•</span>
-            <span>DIGITAL INDIA INITIATIVE</span>
-            <span>•</span>
-            <span>DEPLOYED ON VERCEL</span>
-          </p>
+        {/* Copyright */}
+        <div className="border-t border-slate-800/60 pt-6 text-center text-xs font-medium text-slate-500 space-y-1">
+          <p>© 2026 गौलापार डिजिटल ग्राम पोर्टल | Gaulapar Digital Village Portal</p>
+          <p>Gaulapar, Haldwani, District Nainital, Uttarakhand – 263139</p>
         </div>
-
       </div>
     </footer>
   );

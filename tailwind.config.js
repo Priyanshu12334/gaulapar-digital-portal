@@ -50,8 +50,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Noto Sans Devanagari"', 'Poppins', 'sans-serif'],
-        heading: ['Poppins', '"Noto Sans Devanagari"', 'sans-serif'],
+        sans: ['Inter', '"Noto Sans Devanagari"', 'sans-serif'],
+        heading: ['Inter', '"Noto Sans Devanagari"', 'sans-serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
