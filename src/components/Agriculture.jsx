@@ -1,3 +1,6 @@
+import tomatoCardImage from '../assets/tomato-card.jpeg';
+import riceCardImage from '../assets/rice-card.jpeg';
+
 const crops = [
   {
     name: 'Tomato',
@@ -5,7 +8,7 @@ const crops = [
     season: 'Cool season · ठंडा मौसम',
     descriptionHi: 'टमाटर की खेती और इसकी देखभाल के बारे में जानें।',
     descriptionEn: 'Learn about tomato growing seasons and crop care.',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Tomato_plants%2C_2021_-_geograph.org.uk_-_6748379.jpg/960px-Tomato_plants%2C_2021_-_geograph.org.uk_-_6748379.jpg',
+    image: tomatoCardImage,
     imageAlt: 'Tomato plants growing in a garden',
     wikiUrl: 'https://en.wikipedia.org/wiki/Tomato',
   },
@@ -20,13 +23,13 @@ const crops = [
     wikiUrl: 'https://en.wikipedia.org/wiki/Wheat',
   },
   {
-    name: 'Paddy / Rice',
+    name: 'Rice',
     hindi: 'धान',
     season: 'Monsoon · खरीफ',
     descriptionHi: 'धान की खेती बारिश और सिंचाई पर निर्भर करती है।',
     descriptionEn: 'Paddy growing depends on monsoon rain and irrigation.',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Water_reflection_of_a_boy_feeding_hay_to_a_cow_in_a_paddy_field_at_golden_hour_in_Laos.jpg/960px-Water_reflection_of_a_boy_feeding_hay_to_a_cow_in_a_paddy_field_at_golden_hour_in_Laos.jpg',
-    imageAlt: 'A paddy field in Laos',
+    image: riceCardImage,
+    imageAlt: 'Ripe rice plants in a field',
     wikiUrl: 'https://en.wikipedia.org/wiki/Rice',
   },
   {

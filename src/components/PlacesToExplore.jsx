@@ -15,6 +15,7 @@ const localities = [
   { name: 'Chorgaliya', group: 'Southern nearby belt · Lalkuan', status: 'Mapped village', query: 'Chorgalia, Lalkuan, Nainital, Uttarakhand' },
   { name: 'Devla Malla', group: 'Gaulapar side · Haldwani', status: 'School address locality', query: 'Devla Malla, Haldwani, Nainital, Uttarakhand' },
   { name: 'Devla Talla', group: 'Gaulapar area', status: 'Community locality name', query: 'Devla Talla, Gaulapar, Haldwani, Uttarakhand' },
+  { name: 'Bagjala (बागजाला)', group: 'Devla Talla · Gaulapar', status: 'Mapped locality', query: 'Bagjala, Devla Talla, Gaulapar, Haldwani, Uttarakhand' },
   { name: 'Nawar Khera', group: 'Gaulapar area', status: 'Community locality name', query: 'Nawar Khera, Gaulapar, Haldwani, Uttarakhand' },
   { name: 'Jagatpur', group: 'Gaulapar area', status: 'Community locality name', query: 'Jagatpur, Gaulapar, Haldwani, Uttarakhand' },
   { name: 'Rambagh', group: 'Gaulapar area', status: 'Community locality name', query: 'Rambagh, Gaulapar, Haldwani, Uttarakhand' },
@@ -127,12 +128,13 @@ const PlacesToExplore = () => (
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div className="w-full text-center sm:w-auto sm:text-left">
             <span className="badge-green mb-2">स्थानीय क्षेत्र / Localities</span>
-            <h3 className="text-center font-extrabold text-slate-900 leading-tight whitespace-nowrap sm:text-left">
-              <span className="inline-block whitespace-nowrap text-[clamp(0.75rem,4.3vw,1rem)] md:text-2xl xl:text-3xl">
-                गौलापार क्षेत्र के गांव
+            <h3 className="text-center font-extrabold text-slate-900 leading-tight sm:whitespace-nowrap sm:text-left">
+              <span className="inline text-[clamp(0.75rem,4.3vw,1rem)] md:inline-block md:text-2xl xl:text-3xl sm:whitespace-nowrap">
+                गौलापार के गाँव एवं क्षेत्र
               </span>
-              <span className="ml-1 inline-block whitespace-nowrap text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:ml-2 md:text-sm xl:text-base">
-                / Villages of Gaulapar
+              {' '}
+              <span className="inline text-[clamp(0.75rem,3.5vw,0.875rem)] font-medium text-slate-500 md:ml-2 md:inline-block md:text-sm xl:text-base sm:whitespace-nowrap">
+                / Villages &amp; Localities of Gaulapar
               </span>
             </h3>
           </div>

@@ -23,13 +23,12 @@ const Hero = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-center text-[clamp(1.125rem,5.2vw,1.375rem)] sm:text-left sm:text-[1.75rem] lg:text-[2rem] xl:text-[2.25rem] font-extrabold tracking-tight text-slate-900 leading-[1.2]">
-              <span className="block whitespace-nowrap">
-                गौलापार – <span className="text-gov-green-700">हमारी पहचान,</span>{' '}
-                <span className="text-gov-saffron-600">हमारा भविष्य</span>
+            <h1 className="text-center text-[clamp(1.375rem,7vw,1.75rem)] sm:text-left sm:text-[1.75rem] lg:text-[2rem] xl:text-[2.25rem] font-extrabold tracking-tight text-slate-900 leading-[1.2]">
+              <span className="block">
+                <span className="text-gov-saffron-600">गौलापार</span> – गाँवों की पहचान, डिजिटल विकास की नई उड़ान
               </span>
-              <span className="mt-2 hidden whitespace-nowrap text-[clamp(0.8125rem,3.6vw,0.9375rem)] sm:block sm:text-base lg:text-lg xl:text-xl font-medium text-slate-500">
-                Gaulapar – Our Identity, Our Future
+              <span className="mt-2 block text-[clamp(0.875rem,4vw,1.125rem)] font-medium text-slate-500 sm:text-base lg:text-lg xl:text-xl">
+                Gaulapar – Connecting Villages, Empowering Communities
               </span>
             </h1>
 
