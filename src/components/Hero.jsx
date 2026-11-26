@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="relative z-10 w-full lg:w-[58%] space-y-6 pr-0 lg:pr-2 text-center lg:text-left animate-fade-in-up">
 
             {/* Location Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-gov-green-200 shadow-sm">
+            <div className="mx-auto flex w-fit items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-gov-green-200 shadow-sm">
               <FiMapPin className="w-3.5 h-3.5 text-gov-saffron-600" />
               <span className="text-xs font-semibold text-gov-green-800 tracking-wide">
                 Haldwani, District Nainital, Uttarakhand
@@ -23,25 +23,29 @@ const Hero = () => {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-center text-[clamp(1.375rem,7vw,1.75rem)] sm:text-left sm:text-[1.75rem] lg:text-[2rem] xl:text-[2.25rem] font-extrabold tracking-tight text-slate-900 leading-[1.2]">
-              <span className="block">
+            <h1 className="flex flex-wrap justify-center gap-x-2 gap-y-2 text-center lg:justify-start lg:text-left text-[clamp(1.375rem,7vw,1.75rem)] sm:text-[1.75rem] lg:text-[2.25rem] xl:text-[2.5rem] font-extrabold tracking-tight text-slate-900 leading-[1.2]">
+              <span className="inline">
                 <span className="text-gov-saffron-600">गौलापार</span> – गाँवों की पहचान, डिजिटल विकास की नई उड़ान
               </span>
-              <span className="mt-2 block text-[clamp(0.875rem,4vw,1.125rem)] font-medium text-slate-500 sm:text-base lg:text-lg xl:text-xl">
-                Gaulapar – Connecting Villages, Empowering Communities
+              {' '}
+              <span className="block text-[clamp(0.875rem,4vw,1.125rem)] font-medium text-slate-500 sm:text-base lg:text-lg xl:text-xl">
+                <span className="whitespace-nowrap">/ Gaulapar</span> – Connecting Villages, Empowering Communities
               </span>
             </h1>
 
             {/* English Subtitle */}
-            <p className="text-sm font-medium text-gov-green-900 text-center sm:text-lg sm:text-left sm:font-bold lg:text-xl">
+            <p className="text-sm font-medium text-gov-green-900 text-center sm:text-lg sm:font-bold lg:text-lg lg:text-left">
               Discover Gaulapar – Culture, Community &amp; Development
             </p>
 
             {/* Short Introduction */}
-            <p className="text-sm sm:text-base text-slate-600 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              नैनीताल जनपद के हल्द्वानी क्षेत्र में गौला नदी के तट पर बसा गौलापार अपनी प्राकृतिक सुंदरता,
-              कृषि परंपरा, शैक्षणिक संस्थानों और अंतरराष्ट्रीय खेल परिसर के लिए जाना जाता है।
-              A digital community portal connecting residents, visitors, and local institutions across Gaulapar.
+            <p className="text-center text-sm sm:text-base text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
+              <span className="block" lang="hi">
+                गौलापार नाम का उपयोग आमतौर पर हल्द्वानी में गौला नदी के पूर्व में बसे क्षेत्र के लिए किया जाता है। इसमें एक ही राजस्व ग्राम की सीमा के बजाय कई गाँव, छोटी बस्तियाँ और सड़क किनारे बसे स्थानीय क्षेत्र शामिल हैं।
+              </span>
+              <span className="mt-3 block" lang="en">
+                Gaulapar is commonly used for the settled area east of the Gaula River around Haldwani. It includes a mix of villages, hamlets, and road-side localities rather than one single revenue-village boundary.
+              </span>
             </p>
 
             {/* Primary & Secondary CTAs */}
@@ -63,18 +67,22 @@ const Hero = () => {
             </div>
 
             {/* Authentic Quick Facts Strip */}
-            <div className="grid grid-cols-3 gap-4 pt-6 max-w-lg mx-auto lg:mx-0 border-t border-slate-200/80">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 max-w-lg mx-auto lg:mx-0 border-t border-slate-200/80">
               <div>
-                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">River</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">River</p>
                 <p className="text-sm font-bold text-gov-green-900 mt-0.5">Gaula</p>
               </div>
               <div className="border-x border-slate-200 px-3">
-                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Area</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Area</p>
                 <p className="text-sm font-bold text-gov-green-900 mt-0.5">Haldwani</p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">District</p>
-                <p className="text-sm font-bold text-gov-saffron-600 mt-0.5">Nainital</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">District</p>
+                <p className="text-sm font-bold text-gov-green-900 mt-0.5">Nainital</p>
+              </div>
+              <div className="border-l border-slate-200 px-3">
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">State</p>
+                <p className="mt-0.5 break-words text-sm font-bold text-gov-green-900">Uttarakhand</p>
               </div>
             </div>
 
